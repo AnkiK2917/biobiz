@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioBiz Consulting</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #343a40;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styling */
+        .navbar {
+            background-color: #ffffff;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #0ca62b;
+            font-size: 1.8rem;
+        }
+
+        .navbar-brand span {
+            color: #f7931e;
+            font-size: 1.3rem;
+        }
+
+        .nav-link {
+            color: #555555;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            color: #0ca62b;
+        }
+
+        .nav-link.active {
+            color: #0ca62b;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            background-size: cover;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+        }
+
+        .btn-cta {
+            background-color: #f7931e;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-cta:hover {
+            background-color: #0ca62b;
+            color: white;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 60px 0;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .content-box {
+            padding: 30px;
+            background: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .content-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .content-box h4 {
+            margin-top: 20px;
+            font-weight: 600;
+            color: #0ca62b;
+        }
+
+        .content-box p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 0;
+            margin-top: 40px;
+        }
+
+        .footer a {
+            color: #f7931e;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #0ca62b;
+        }
+    </style>
+</head>
+<body>
+
+ <!-- Enhanced Header Section -->
+ <nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="/images/logo.png.png" alt="Logo" class="img-fluid" style="height: 50px;">
+            BioBiz<span>India</span>
+        </a>
+        <!-- Toggler for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">India Updates</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Opportunities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">BioBiz Consulting</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Innovation Insights</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="insightsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Insights
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="insightsDropdown">
+                        <li><a class="dropdown-item" href="#">Trend Analysis</a></li>
+                        <li><a class="dropdown-item" href="#">Market Studies</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#">BRING</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Full-Screen Hero Section with Video -->
+<section class="hero-video" style="margin: 0; padding: 0;">
+    <video 
+        autoplay 
+        muted 
+        loop 
+        playsinline 
+        style="
+            width: 100vw; 
+            height: 100vh; 
+            object-fit: cover; 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            z-index: -1;
+        ">
+        <source src="/video/content.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Content Overlay -->
+    <div 
+        style="
+            position: relative; 
+            z-index: 1; 
+            color: #f7931e; 
+            text-align: center; 
+            padding: 20px; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh;
+        ">
+        <h1 style="font-size: 3rem; margin-bottom: 20px;">Innovating for a Sustainable Future</h1>
+        <p style="font-size: 1.5rem; margin-bottom: 30px;">Your Partner in Biomass and Bioeconomy Solutions</p>
+        <a href="#expertise" 
+           style="
+               display: inline-block; 
+               padding: 10px 20px; 
+               background-color: #0ca62b; 
+               color: white; 
+               text-decoration: none; 
+               border-radius: 5px; 
+               font-size: 1.2rem;
+           ">
+           Explore Our Expertise
+        </a>
+    </div>
+</section>
+
+
+<!-- BioBiz Overview Section -->
+<section id="biobiz-overview" class="d-flex align-items-center justify-content-center" style="background-color: #f8f9fa;">
+    <div class="container text-center text-md-start">
+        <div class="row justify-content-center">
+            <div class="col-md-100 col-lg-80">
+                <h2 class="mb-4" style="color: #0ca62b; font-weight: 700; font-size: 2.5rem;">
+                    Unlocking India’s Bio-Economy Potential
+                </h2>
+                <p style="color: #555; line-height: 1.8; font-size: 1.1rem;">
+                    At BioBiz, we are keen to capitalize on India’s rich biodiversity and the availability of large amounts of biomass residues to develop a sustainable bio-economy and attractive business opportunities for diverse stakeholders – farmers, rural stakeholders, end-use industries, entrepreneurs/startups, and financial investors.
+                </p>
+                <p style="color: #555; line-height: 1.8; font-size: 1.1rem;">
+                    As part of a leading climate tech consulting firm, we provide critical assistance with <strong>market intelligence</strong>, <strong>data-driven analyses</strong>, <strong>professional networking</strong>, and <strong>opportunities</strong> for effective visibility.
+                </p>
+                <a href="#contact" class="btn btn-success mt-3 px-4 py-2">Want to know more?</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Main Section -->
+<section id="main-section" class="bg-light py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold" style="color: #0ca62b;">Explore Opportunities</h2>
+            <p class="text-muted">Driving India’s bio-economy through innovative partnerships, insights, and solutions.</p>
+        </div>
+        <div class="row g-4">
+            <!-- Card 1: Funding Solutions -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="/images/image1.png.png" class="card-img-top" alt="Funding Solutions" class="img-fluid" style="height: 200px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold text-success">Funding Solutions</h5>
+                        <p class="card-text text-muted">Access funding opportunities to accelerate bio-based projects across India.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2: Policy Updates -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="/images/image2.png" class="card-img-top" alt="Policy Updates" class="img-fluid" style="height: 200px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold text-success">Policy Updates</h5>
+                        <p class="card-text text-muted">Stay informed about evolving government policies driving the bio-economy sector.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3: Project Partnerships -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="/images/image3.png" class="card-img-top" alt="Project Partnerships" class="img-fluid" style="height: 200px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold text-success">Project Partnerships</h5>
+                        <p class="card-text text-muted">Collaborate with strategic partners to build innovative and sustainable solutions.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4: Market Insights -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="/images/image4.png" class="card-img-top" alt="Market Insights" class="img-fluid" style="height: 200px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold text-success">Market Insights</h5>
+                        <p class="card-text text-muted">Leverage in-depth market studies and trend analyses for strategic decisions.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5: Innovation Programs -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="/images/image5.png" class="card-img-top" alt="Innovation Programs" class="img-fluid" style="height: 200px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold text-success">Innovation Programs</h5>
+                        <p class="card-text text-muted">Engage with programs focused on innovative bio-based technologies and startups.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6: Rural Partnerships -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="/images/image6.png" class="card-img-top" alt="Rural Partnerships" class="img-fluid" style="height: 200px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold text-success">Rural Partnerships</h5>
+                        <p class="card-text text-muted">Empower farmers and rural stakeholders to be key contributors in the bio-economy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Updates Section -->
+<section id="updates" class="updates">
+    <div class="container">
+        <h2 style="color: #0ca62b;">India Updates</h2>
+        <div id="updatesCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex align-items-center">
+                        <img src="https://via.placeholder.com/150" alt="Update" class="me-3 rounded">
+                        <div>
+                            <h5>Latest Policy Updates on Bioeconomy</h5>
+                            <p>Stay updated with the latest government policies and innovations driving India's bioeconomy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex align-items-center">
+                        <img src="https://via.placeholder.com/150" alt="Update" class="me-3 rounded">
+                        <div>
+                            <h5>Innovation Insights</h5>
+                            <p>Discover new technologies and solutions revolutionizing the bio-based sector.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex align-items-center">
+                        <img src="https://via.placeholder.com/150" alt="Update" class="me-3 rounded">
+                        <div>
+                            <h5>Renewable Energy Projects</h5>
+                            <p>Learn about ongoing biomass and renewable energy projects transforming India.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#updatesCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#updatesCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Innovation Insights Section -->
+<section id="insights">
+    <div class="container">
+        <h2 style="color: #0ca62b;">Innovation Insights</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="content-box">
+                    <h4>Technological Breakthroughs</h4>
+                    <p>Learn about cutting-edge technologies transforming the bioeconomy.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content-box">
+                    <h4>Case Studies</h4>
+                    <p>Explore real-world success stories of bio-based projects.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4"; style="color: #0ca62b;">Contact Us</h2>
+        <p class="text-center text-muted mb-4">
+            Email us at <a href="mailto:ask@biobiz.in">ask@biobiz.in</a> or call us at +91 1234567890.
+        </p>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <form action="#" method="POST" class="needs-validation" novalidate>
+                    <!-- Name Field -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                        <div class="invalid-feedback">
+                            Please provide your name.
+                        </div>
+                    </div>
+                    <!-- Email Field -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid email address.
+                        </div>
+                    </div>
+                    <!-- Phone Field -->
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
+                    </div>
+                    <!-- Subject Dropdown -->
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <select class="form-select" id="subject" name="subject" required>
+                            <option value="" selected disabled>Select a subject</option>
+                            <option value="General Inquiry">General Inquiry</option>
+                            <option value="Partnership Opportunities">Partnership Opportunities</option>
+                            <option value="Funding Solutions">Funding Solutions</option>
+                            <option value="Policy Updates">Policy Updates</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a subject.
+                        </div>
+                    </div>
+                    <!-- Message Field -->
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                        <div class="invalid-feedback">
+                            Please provide a message.
+                        </div>
+                    </div>
+                    <!-- Submit Button -->
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container text-center">
+        <p>&copy; 2024 BioBiz India. All Rights Reserved.</p>
+        
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
